@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkcyan;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: .5rem;
+    padding: 1rem;
+}
+.contenedor > btn{
+    grid-column: 1/-1;
+}
+.asistencia{
+    background-color: cadetblue;
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+}
+label > span{
+    writing-mode: vertical-lr;
+}
+.textInput{
+    writing-mode: horizontal-tb;
+}
+.contInput{
+    background-color: aquamarine;
+    padding: 1rem;
+}
