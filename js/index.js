@@ -1,8 +1,10 @@
 let contFechas = document.querySelector("#contFechas")
 let btnCrear = document.querySelector("#btnCrear")
 
-btnCrear.addEventListener('clik', function(){
+btnCrear.addEventListener('click', function(){
     let numClases =Number(document.querySelector("#numClases").value)
+    console.log(contFechas);
+    
     for (let i=0; i<numClases; i++){
         contFechas.innerHTML += `
                                 <label for="clases" class="asistencia">
